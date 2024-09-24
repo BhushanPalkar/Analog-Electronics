@@ -57,7 +57,26 @@ semiconductor devices that control the flow of current between a source and a dr
 * The gate terminal is insulated from the channel by a layer of oxide.
 * The gate voltage controls the formation of a channel between the source and drain.
 
+__MOSFET__
 
+Vdo:https://youtu.be/stM8dgcY1CA?si=d5HHqySzxiSV1mjt
+
+![image](https://github.com/user-attachments/assets/39f80ed4-5639-4d80-a7f9-ddf7a5272e73)
+
+Capacitor: It consists of an insulator sandwiched between two metal plates.
+* Electric field is induced between two metal plates.
+* one metal plate is removed and another metal plate with insulator is placed on MOSFET as GATE terminal.
+
+Working;
+* when voltage is applied between GATE and SUBSTRATE, electrons from CAPACITOR are fed into P type substrate
+* Number of electrons increases in p-type substrate
+* Electric field from CAP is induced in substrate causing large number of electrons attract to the GATE terminal
+* Electrons combine with the holes and break the deplition region
+* This introduces channel between two N-wells
+* On providing voltage between drain and source, current flows from Source to drain (MOSFET TURNS ON)
+            
+           
+            
 
 
 
