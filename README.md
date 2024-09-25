@@ -13,9 +13,9 @@ Vdo transistor working: https://youtu.be/7ukDKVHnac4?si=0AgJhrte8LMvCEun
 
 * Diode: A diode is formed when a silicon is doped with N type (Phosphrous) and P type (Boron)
 * Phosphorous has 5 valence electron **(N)** and boron has 3 valence electron **(P)**, electrons from N travel to P forming depletion region.
-* In FORWARD BIAS more electrons get diffused in N type, and as there are holes in p type electrons are drifted towards P type, casuing current to flow.
+* In FORWARD BIAS more electrons get diffused in N type, and as there are holes in p type... electrons are drifted towards P type, casuing current to flow.
 
-__BJT Transistor__(Both e and p contribue in flow of current):
+## __BJT Transistor__(Both e and p contribue in flow of current):
 
 
 ![BJT AMP](https://github.com/user-attachments/assets/ceced6d5-81e8-41b2-a028-314053d96828)
@@ -43,7 +43,7 @@ __Modes of Operation__
   * emitter-base is FB
   * collector base is FB
  
-__FET Transistor:__
+### __FET Transistor:__
 
 semiconductor devices that control the flow of current between a source and a drain terminal using an Voltage.
  
@@ -75,8 +75,64 @@ Working;
 * This introduces channel between two N-wells
 * On providing voltage between drain and source, current flows from Source to drain (MOSFET TURNS ON)
             
-           
-            
+__Depletion Type of MOSFET__
+
+![image](https://github.com/user-attachments/assets/88edf537-6e9f-40be-8361-e14b4f1f759a)
+
+* Channel is already present
+* MOSFET IS works even at Vgs=0 
+* At Vgs>0, Drain current (Id) increases
+* At Vgs<0, Drain current (Id) decreases
+* On applying Vds (drain to source), current starts to flow from source to drain.
+* After pinch off voltage (Too much of Vds) the current gets saturated.
+
+*Drain and transfer Characteristics*
+
+Transfer characteristics are Input vs Output
+
+![image](https://github.com/user-attachments/assets/080bdfed-dd1b-48a6-ab11-195707ea715a)
+
+* Depletion mode is device OFF
+* Enhancement mode is device ON
+
+
+__Enhancement Type of MOSFET__
+
+
+![image](https://github.com/user-attachments/assets/8533641b-2b08-46fb-b7c4-b27483060b5f)
+
+* Channel is formed
+* When Vgs>0, minority carriers (electrons) from p substrate are attracted towards gate.
+* As Vgs increases, drain current also increases.
+* INVERSION: the p-type near gate is inverted to n-type, forming a channel
+* When Vds is applied the current starts to flow from source to drain
+   * Vgd (voltage between gate and drain ) = Vgs - Vds
+   * IF Vds = 0V : Vgd=Vgs (Uniform depletion width)
+   * If Vds > 0v : Vgd decreases (More e- are pulled by drain, hence channel width decreases) Non-Uniform
+   * If Vds = Vgs - Vt : Vgd = Vt ( Channel will become very narrow near DRAIN, making the MOSFET OFF) : Pinch OFF voltage occurs
+ 
+![image](https://github.com/user-attachments/assets/cedb1450-cf4c-404a-a1e7-af54201b20e7)
+
+
+__OP AMP__
+
+App : ADC, DAC, Oscillators,
+* Slewrate: how fast the Op-Amp reaches its final value
+* Common mode rejection ratio : The ability of Op-Amp to reject the input when same voltage is applied at both the terminals.(For better accuracy)
+* Open Loop gain is generally between 10^5 - 10^6
+
+![image](https://github.com/user-attachments/assets/eff14565-83c1-458f-a25c-df4bbad16d56)
+
+* A differential op-amp is a type of operational amplifier (op-amp) that amplifies the difference between two input signals.
+* The amplified signal is always in between V+ and V-
+
+
+
+
+
+
+
+
 
 
 
